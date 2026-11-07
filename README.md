@@ -6,7 +6,15 @@
 
 ## 📑 **Project Overview**
 
-This project provides comprehensive insights into the job markets of **Egypt** and **Saudi Arabia** using data analysis and visualization tools. It allows users to explore various aspects of the job market, including job distribution, top employers, industry trends, and experience requirements. Built with **Streamlit**, **Pandas**, and **Matplotlib**, this application offers an interactive, user-friendly experience for professionals, job seekers, and data enthusiasts.
+This project provides comprehensive insights into the job markets of **Egypt** and **Saudi Arabia** using data analysis and visualization tools. It allows users to explore various aspects of the job market, including job distribution, top employers, industry trends, and experience requirements. Built with **Streamlit**, **Pandas**, **Plotly** and **Seaborn**, this application offers an interactive, user-friendly experience for professionals, job seekers, and data enthusiasts.
+
+| Item | Value |
+| --- | --- |
+| Source | Bayt.com job listings (scraped with `requests` + BeautifulSoup) |
+| Listings collected | 481 result pages — 4,009 Egypt + 5,505 Saudi Arabia after cleaning |
+| Storage | SQLite database + processed CSV tables |
+| Analyses | 12 visualizations per market, plus a cross-market comparison |
+| Interface | Streamlit multipage app with cached per-page views |
 
 ## 🎯 **Key Features**
 
@@ -27,16 +35,16 @@ This project provides comprehensive insights into the job markets of **Egypt** a
 
 * Python 3.10+
 * Streamlit
-* Pandas
-* Matplotlib
+* Pandas, Plotly, Seaborn
+* `requests` + BeautifulSoup (for re-scraping, optional)
 
 ### Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/EzzAl-Din/Job_Market_Insights.git
-cd Job_Market_Insights
+git clone https://github.com/ezz-eldin-emad/Job-Market-Insights-analysis.git
+cd Job-Market-Insights-analysis
 ```
 
 Install dependencies:
@@ -48,7 +56,7 @@ pip install -r requirements.txt
 Run the app locally:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 ## 🛠️ **Modules and Functions**
@@ -93,5 +101,5 @@ streamlit run app.py
 
 * **Live App:** [Job Market Insights Analysis](https://job-market-insights-analysis.streamlit.app)
 * **Team Portfolio:** [DataMentes Team](https://team-portfolio.streamlit.app)
-* **GitHub Repository:** [https://github.com/DataMentes/Job-Market-Insights-analysis](https://github.com/DataMentes/Job-Market-Insights-analysis)
+* **GitHub Repository:** [https://github.com/ezz-eldin-emad/Job-Market-Insights-analysis](https://github.com/ezz-eldin-emad/Job-Market-Insights-analysis)
 
